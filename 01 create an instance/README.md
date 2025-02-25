@@ -11,4 +11,8 @@ aws ec2 describe-instance-status --output table|yaml|json
 ## Create an IGW
 
 aws ec2 create-internet-gateway --tag-specifications ResourceType=internet-gateway,Tags=[{Key=Name,Value=my-igw}]
+aws ec2 create-internet-gateway --tags Key="Name",Value="My-IGW"
+aws ec2 describe-internet-gateways --output table
+aws ec2 delete-subnet --subnet-id subnet-05dfd06b00635c11d
+aws ec2 delete-vpc --vpc-id vpc-0084143f76d09739c
 
