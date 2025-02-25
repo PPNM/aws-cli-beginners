@@ -59,7 +59,7 @@ aws ec2 delete-subnet --subnet-id your-sunbnet-id
  ```
 aws ec2 delete-vpc --vpc-id your-vpc-id
 ```
-//Important Notes:
+### Notes:
 Dependencies:
 
 Before deleting a VPC, ensure all dependent resources (e.g., subnets, instances, internet gateways) are deleted or detached.
