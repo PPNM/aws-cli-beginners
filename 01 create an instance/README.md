@@ -5,4 +5,7 @@ aws ec2 create-security-group - group-name my-sg - description "My security grou
  ## Create an Instance
  ```
 aws ec2 run-instances --image-id ami-0198a868663199764 --instance-type t2.micro --region ap-southeast-1 --subnet-id your-Subnet-ID
+
+aws ec2 describe-instance-status --output table|yaml|json
  ```
+
