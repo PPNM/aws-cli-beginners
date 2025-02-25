@@ -1,2 +1,2 @@
-# aws-cli-beginners
+# aws-cli-beginners-practice
 aws-cli-beginners practice
