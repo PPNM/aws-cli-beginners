@@ -36,23 +36,30 @@ aws ec2 create-internet-gateway --tag-specifications 'ResourceType=internet-gate
 aws ec2 describe-internet-gateways --output table
  ```
 The --output table flag formats the output in a readable table format. You can also use json or yaml
-Attach the Internet Gateway to the VPC:
+
+## Attach IGW to VPC
+ ```
  aws ec2 attach-internet-gateway --internet-gateway-id your-igw-id --vpc-id your-vpc-id
- Verify the Attachment:
+  ```
+## Verify the Attachment
+ ```
  aws ec2 describe-internet-gateways --internet-gateway-ids your-igw-id --output table
- Detaching an Internet Gateway:
+ ```
+## Detaching an IGW
+ ```
  aws ec2 detach-internet-gateway --internet-gateway-id your-igw-id --vpc-id your-vpc-id
- Deleting an Internet Gateway
+ ```
+
+ ## Deleting an Internet Gateway
   
  ```
 aws ec2 delete-subnet --subnet-id your-sunbnet-id
  ```
+ ## Deleting VPC
  ```
 aws ec2 delete-vpc --vpc-id your-vpc-id
 ```
-
-
-# Important Notes:
+//Important Notes:
 Dependencies:
 
 Before deleting a VPC, ensure all dependent resources (e.g., subnets, instances, internet gateways) are deleted or detached.
