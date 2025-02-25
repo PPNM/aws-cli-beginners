@@ -14,6 +14,6 @@
 ```
  ## Create Subnet
  ```
- aws ec2 create-subnet --vpc-id vyour-VPC-ID --cidr-block x.x.x.x/x --query Subnet.SubnetId --output text
+ aws ec2 create-subnet --vpc-id your-VPC-ID --cidr-block x.x.x.x/x --query Subnet.SubnetId --output text
  aws ec2 describe-subnets --filters Name=vpc-id,Values=your-VPC-ID --output table
 ```
