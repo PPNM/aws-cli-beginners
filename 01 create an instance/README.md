@@ -8,4 +8,7 @@ aws ec2 run-instances --image-id ami-0198a868663199764 --instance-type t2.micro 
 
 aws ec2 describe-instance-status --output table|yaml|json
  ```
+## Create an IGW
+
+aws ec2 create-internet-gateway --tag-specifications ResourceType=internet-gateway,Tags=[{Key=Name,Value=my-igw}]
 
